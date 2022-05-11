@@ -37,9 +37,9 @@ body{
     height: 100%;
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Arial",sans-serif;
+    font-family:"Poppins", "Arial",sans-serif;
     background-color: #fff;
-    color: #222;
+    color: #9E9AA8;
 }
 
 img{
@@ -47,11 +47,36 @@ img{
     height: auto;
 }
 
+.button {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: #2BD0D0;
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
 
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+.site-heade__button {
+    padding: 9px 23px 8px 24px;
+}
 
 
 /* CONTAINER */
-.container{
+.container {
     width: 100%;
     max-width: 1150px;
     padding-left: 20px;
@@ -63,4 +88,92 @@ img{
 /* MAIN-CONTENT */
 .main-content{
     flex-grow: 1;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+    padding: 48px 0;
+    background-color: #fff;
+}
+
+.site-heade__container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 45px;
+    transition: opacity .3s ease;
+}
+
+.logo__img {
+    width: 120px;
+    height: 33px;
+    object-fit: cover;
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.logo:active {
+    opacity: 0.6;
+}
+
+.sitenav__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sitenav__item:not(:last-child) {
+    margin-right: 29px;
+}
+
+.sitenav__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #9E9AA8;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+.sitenav__link:hover {
+    opacity: 0.8;
+}
+
+.sitenav__link:active {
+    opacity: 0.6;
+}
+
+.site-heade__link {
+    display: flex;
+    align-items: center;
+    margin-left: 493px;
+}
+
+.login {
+    margin-right: 37px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #9E9AA8;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+.login:hover {
+    opacity: 0.8;
+}
+
+.login:active {
+    opacity: 0.6;
 }
