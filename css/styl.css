@@ -1,3 +1,9 @@
+:root {
+    --titlle-color:#34313d;
+    --text-color:#9e9aa8;
+    --air-color:#2bd0d0;
+}
+
 /* GOOGLE FONTS */
 @font-face {
     font-family: 'Poppins';
@@ -39,7 +45,7 @@ body{
     line-height: 1.5;
     font-family:"Poppins", "Arial",sans-serif;
     background-color: #fff;
-    color: #9E9AA8;
+    color: var(--text-color);
 }
 
 img{
@@ -49,16 +55,18 @@ img{
 
 .button {
     display: inline-block;
-    margin: 0;
-    padding: 0;
-    background-color: #2BD0D0;
-    border-radius: 28px;
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 22px;
-    color: #fff;
+    padding: 14px 40px 12px;
     border: 0;
+    border-radius: 28px;
+    background-color: var(--air-color);
+    color: #fff;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
+    white-space: nowrap;
     transition: opacity .3s ease;
 }
 
@@ -111,7 +119,7 @@ img{
 
 .logo__img {
     width: 120px;
-    height: 33px;
+    height: 32px;
     object-fit: cover;
 }
 
@@ -121,6 +129,10 @@ img{
 
 .logo:active {
     opacity: 0.6;
+}
+
+.sitenav {
+    margin-right: 400px;
 }
 
 .sitenav__list {
@@ -140,13 +152,13 @@ img{
     font-weight: 700;
     font-size: 15px;
     line-height: 22px;
-    color: #9E9AA8;
+    color: var(--text-color);
     cursor: pointer;
-    transition: opacity .3s ease;
+    transition: color .3s ease ,opacity .3s ease;
 }
 
 .sitenav__link:hover {
-    opacity: 0.8;
+    color: var(--titlle-color);
 }
 
 .sitenav__link:active {
@@ -156,7 +168,7 @@ img{
 .site-heade__link {
     display: flex;
     align-items: center;
-    margin-left: 493px;
+    margin-left: 93px;
 }
 
 .login {
@@ -165,13 +177,13 @@ img{
     font-weight: 700;
     font-size: 15px;
     line-height: 22px;
-    color: #9E9AA8;
+    color: var(--text-color);
+    transition: color .3s ease , opacity .3s ease;
     cursor: pointer;
-    transition: opacity .3s ease;
 }
 
 .login:hover {
-    opacity: 0.8;
+    color: var(--titlle-color);
 }
 
 .login:active {
