@@ -84,7 +84,9 @@ img{
 }
 
 .button--small {
-    padding: 9px 23px 8px 24px;
+    padding: 8px 24px;
+    font-size: 15px;
+    line-height: 22.5px;
 }
 
 .button--big {
@@ -388,4 +390,8 @@ select:-webkit-autofill:focus {
 
 .url-shortner__copy-button {
     min-width: 103px;
+}
+
+.url-shortner__copy-button-copied {
+    background-color: #3a3054;
 }
