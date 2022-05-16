@@ -120,24 +120,28 @@ img{
 .site-header {
     padding: 48px 0;
     background-color: #fff;
+    font-weight: bold;
+    line-height: normal;
 }
 
 .site-heade__container {
     display: flex;
     align-items: center;
-    flex-direction: row;
 }
 
 .logo {
     display: inline-block;
+}
+
+.site-heade__logo {
     margin-right: 45px;
-    transition: opacity .3s ease;
 }
 
 .logo__img {
+    display: block;
     width: 120px;
-    height: auto;
-    object-fit: cover;
+    height: 33px;
+    object-fit: contain;
 }
 
 .logo:hover {
@@ -154,16 +158,18 @@ img{
 
 .sitenav__list {
     display: flex;
+    align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .sitenav__item:not(:last-child) {
-    margin-right: 29px;
+    margin-right: 30px;
 }
 
 .sitenav__link {
+    display: block;
     text-decoration: none;
     font-style: normal;
     font-weight: 700;
