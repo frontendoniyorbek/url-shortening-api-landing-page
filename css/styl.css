@@ -1,10 +1,14 @@
+/* CUSTOM-PROPS */
 :root {
     --titlle-color:#34313d;
     --text-color:#9e9aa8;
     --air-color:#2bd0d0;
+    --air-color-hover: #9ae3e3;
+    --lg-bg: #eff1f7;
+    --error-color: #f46363;
 }
 
-/* GOOGLE FONTS */
+/* FONTS */
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
@@ -41,8 +45,9 @@ body{
     display: flex;
     flex-direction: column;
     height: 100%;
-    font-size: 16px;
-    line-height: 1.5;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 36px;
     font-family:"Poppins", "Arial",sans-serif;
     background-color: #fff;
     color: var(--text-color);
@@ -71,15 +76,27 @@ img{
 }
 
 .button:hover {
-    opacity: 0.8;
+    background-color: var(--air-color-hover);
 }
 
 .button:active {
     opacity: 0.6;
 }
 
-.site-heade__button {
+.button--small {
     padding: 9px 23px 8px 24px;
+}
+
+.button--big {
+    padding: 18px 40px 16px;
+}
+
+.button--rectangle {
+    border-radius: 5px;
+}
+
+.button--rectangle-big {
+    border-radius: 10px;
 }
 
 
@@ -119,7 +136,7 @@ img{
 
 .logo__img {
     width: 120px;
-    height: 32px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -188,4 +205,33 @@ img{
 
 .login:active {
     opacity: 0.6;
+}
+
+
+/* HERO */
+.hero {
+    padding-top: 92px;
+    padding-bottom: 222px;
+    background-image: url(../img/working_with_computer.svg);
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 476px) top 30px;
+}
+
+.hero__inner {
+    max-width: 565px;
+}
+
+.hero__title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2px;
+    color: var(--titlle-color);
+}
+
+.hero__text {
+    margin-top: 0;
+    margin-bottom: 38px;
 }
