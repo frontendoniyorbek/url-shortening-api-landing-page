@@ -20,11 +20,14 @@ if (elUrlShortener) {
       // Change button bgcolor
       evt.target.classList.add('url-shortner__copy-button-copied');
 
+      // Copy short link to clipboard
+      // navigator.clipboard.writeText(evt.target.pleviousElementSibling.textContent);
+
       // Reset button text and class after 1 secund
       setTimeout(function() {
         evt.target.textContent = 'Copy';
         evt.target.classList.remove('url-shortner__copy-button-copied');
-      },1000)
+      }, 1000);
     }
 
   });
