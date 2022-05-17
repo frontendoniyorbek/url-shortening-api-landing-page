@@ -263,7 +263,7 @@ select:-webkit-autofill:focus {
     padding-bottom: 222px;
     background-image: url(../img/working_with_computer.svg);
     background-repeat: no-repeat;
-    background-position: left calc(50% + 476px) top 30px;
+    background-position: left calc(50% + 416px) top 30px;
 }
 
 .hero__inner {
@@ -408,7 +408,7 @@ select:-webkit-autofill:focus {
     max-width: 540px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 56px;
+    margin-bottom: 107px;
     text-align: center;
 }
 
