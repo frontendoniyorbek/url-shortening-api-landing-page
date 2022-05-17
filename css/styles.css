@@ -487,9 +487,6 @@ select:-webkit-autofill:focus {
     margin-top: 88px;
 }
 
-.index-feature__icon {
-}
-
 .index-feature__title {
     margin-top: 0;
     margin-bottom: 12px;
@@ -583,6 +580,7 @@ select:-webkit-autofill:focus {
     letter-spacing: -0.234375px;
     font-size: 15px;
     line-height: 22px;
+    text-transform: capitalize;
     cursor: pointer;
     transition: color .3s ease;
 }
